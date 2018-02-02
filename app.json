@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/hot/hot",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTitleText": "酸橙音乐",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#d43c33",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "新歌榜",
+        "iconPath": "assets/new.png",
+        "selectedIconPath": "assets/selectNew.png"
+      },
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "热歌榜",
+        "iconPath": "assets/hot.png",
+        "selectedIconPath": "assets/selectHot.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "assets/search.png",
+        "selectedIconPath": "assets/selectSearch.png"
+      }
+    ]
+  }
+}

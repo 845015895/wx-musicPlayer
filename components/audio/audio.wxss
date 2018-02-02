@@ -1,0 +1,61 @@
+.audioBar {
+    position: absolute;
+    z-index: 5;
+}
+
+.miniBar {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 152rpx;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    padding-left: 10rpx;
+}
+
+.authorImg {
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 10rpx;
+}
+
+.musicBar {
+    box-sizing: border-box;
+    padding-left: 20rpx;
+    width: 340rpx;
+
+}
+
+.songName {
+    width: 340rpx;
+    font-size: 32rpx;
+    overflow: hidden;
+    margin-bottom: 15rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 32rpx;
+}
+
+.authorName {
+    font-size: 26rpx;
+    line-height: 26rpx;
+    color: #888;
+}
+
+.btnGroup {
+    display: flex;
+}
+
+.btn {
+    width: 70rpx;
+    height: 70rpx;
+}
+
+
+.nextBtn {
+    margin-left: 30rpx;
+
+}

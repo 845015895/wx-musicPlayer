@@ -1,0 +1,22 @@
+<view class="audioBar" id="audio" wx:if='{{showAudio}}'>
+    <view class="miniBar">
+        <image class="authorImg" src='{{music[index].imgUrl}}'> </image>
+        <!--歌名-->
+        <view class="musicBar">
+            <view class="songName">{{music[index].musicName}}</view>
+            <view class="authorName">{{music[index].singer}}</view>
+        </view>
+
+        <!--操作区域-->
+        <view class="btnGroup">
+            <image class="btn" src="../../assets/play_icon.png" id="playBtn" hidden="{{isPlaying}}" bindtap='audioPlay'></image>
+            <image class="btn" hidden="{{!isPlaying}}" src="../../assets/pause_icon.png" bindtap="audioPause"></image>
+            <!--<div class="btn playBtn" v-show="!isPlaying"></div>-->
+            <!--<div class="btn pauseBtn" v-show="isPlaying"></div>-->
+            <image class="btn nextBtn" src="../../assets/next_icon.png" bindtap="next"></image>
+        </view>
+
+    </view>
+    <view class="mainBar">
+    </view>
+</view>

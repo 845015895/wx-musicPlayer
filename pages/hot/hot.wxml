@@ -1,0 +1,28 @@
+<!--pages/search/search.wxml-->
+<view class="hot">
+
+
+    <view class="hotBanner">
+        <view>
+            <view class="hotTitle"></view>
+            <view class="updateDate">更新日期：{{date}}</view>
+        </view>
+        <view class="shadow"></view>
+
+    </view>
+    <view>
+        <view wx:for="{{songList}}" class="musicList" data-index="{{index}}" bindtap="playMusic">
+          <view  class="topNum {{index<3 ? 'top' : ''}}">
+            {{index < 9 ? "0" + (index + 1) : index + 1}}
+          </view>
+          <view class="songList">
+            <view>{{ item.songName !== undefined ? item.songName : item.musicName}}</view>
+            <view>{{item.singer + "- "}}{{item.remark ? item.remark : item.musicName}}</view>
+          </view>
+          <view class="playImg"></view>
+
+        </view>
+      </view>
+
+    <audio music="{{music}}" showAudio="{{showAudio}}" index="{{index}}" id="audio"></audio>
+</view>

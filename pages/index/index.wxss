@@ -1,0 +1,118 @@
+/**index.wxss**/
+.command{
+    padding-bottom: 152rpx;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+}
+
+.usermotto {
+    margin-top: 200px;
+}
+
+.title {
+    margin-top: 25rpx;
+    box-sizing: border-box;
+    font-size: 36rpx;
+    padding-left: 20rpx;
+    font-weight: normal;
+    border-left: 6rpx solid #df3436;
+}
+
+.commandContent {
+    overflow: hidden;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+
+.soaringList {
+    float: left;
+    width: 32%;
+    overflow: hidden;
+    margin-left: 1%;
+}
+
+.soaringImg {
+    width: 100%;
+    height: 260rpx;
+    background-size: cover;
+}
+
+.soaringTitle {
+    padding-left: 10rpx;
+    font-size: 28rpx;
+    height: 80rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.newList {
+    list-style: none;
+    padding-left: 8rpx;
+    padding-top: 40rpx;
+}
+
+.songListLi {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.songList {
+    padding: 12rpx 20rpx;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.songListP1 {
+    width: 600rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 32rpx;
+    display: flex;
+}
+
+.mark {
+    color: #888;
+    margin-left: 10rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.songListP2 {
+    margin-top: 10rpx;
+    font-size: 26rpx;
+    color: #888;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 600rpx;
+    overflow: hidden;
+}
+
+.playImg {
+    width: 50rpx;
+    height: 50rpx;
+    padding: 0 20rpx 0 0;
+    /* background: url("../assets/play.png") no-repeat;
+    background-size: contain; */
+}

@@ -1,0 +1,32 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+    <view class="searchMain">
+        <view class="searchBar">
+            <view class="searchImg"></view>
+            <input type="text" class="searchIpt" id="searchIpt" placeholder="搜索歌曲、歌手" autocomplete="off" v-model="search">
+            </input>
+            <view class="deleteImg" hidden="{{!showDelete}}" v-on:click="clear()"></view>
+        </view>
+    </view>
+    <view class="hotSearch"wx:if="{{!isShowList&&!showNotes}}">
+        <view class="h3">热门搜索</view>
+        <view class="hotUl">
+            <view class="li" wx:for="{{hotList}}">{{item}}</view>
+        </view>
+    </view>
+    <view v-if="{{isShowList&&!showNotes}}" class="showSearch">
+        <view class="h3">最佳匹配</view>
+        <view class="bestMatch">
+            <view wx:for="{{bestMatchList}}" class="bestLi">
+                <view>{{list.Grp ? list.SongName : list.Grp[0].SongName}}</view>
+                <view>{{list.Grp ? list.FileName : list.Grp[0].FileName}}</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="searchNotes" wx:if="{{showNotes}}">
+        <view class="searchBtn">搜索“{{search}}”</view>
+    </view>
+
+
+</view>

@@ -1,0 +1,31 @@
+<view class="command">
+    <text class="title">{{commandText}}</text>
+    <view class="commandContent" wx:if="{showImg >= 6}">
+        <view wx:for="{{soaringSongList}}" wx:key="key" class="soaringList" data-listType="soar" data-index="{{index}}" bindtap="playMusic">
+            <image src='{{item.imgUrl}}' class="soaringImg"></image>
+            <text class="soaringTitle">{{item.filename}}</text>
+        </view>
+    </view>
+    <text class="title">{{newText}}</text>
+    <view class="newList"> 
+        <view wx:for="{{songList}}" class="songListLi" wx:key="key" data-listType="new" data-index="{{index}}" bindtap="playMusic">
+            <!-- <view  wx:for="songList" v-on:click="playNewMusic(index, songList);"> -->
+            <view class="songList">
+                <view class="songListP1">
+                    <view>
+                        <text>{{ item.songName !== undefined ? item.songName : item.musicName}}</text>
+                        <text class="mark">{{item.intro !== "(undefined" ? item.intro : " "}}</text>
+                    </view>
+
+                </view>
+                <view class="songListP2">{{item.singer + "- " + item.remark}}</view>
+            </view>
+            <image class="playImg" src='http://yizicheng.cn/images/play.png'></image>
+        </view>
+    </view>
+
+    <audio music="{{music}}" showAudio="{{showAudio}}" index="{{index}}" id="audio"></audio>
+
+
+
+</view>
